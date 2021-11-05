@@ -2,29 +2,29 @@
 <template>
   <div class="login-contents">
     <div class="input">
-        <div class="item label">
-          <p>UserID</p>
-        </div>
-        <div class="item value">
-          <input type="text" name="userid" class="" v-model="user_id" />
-        </div>
-        <div class="item length">
-          <p>{{ user_id.length }}</p>
-        </div>
+      <div class="item label">
+        <p>UserID</p>
+      </div>
+      <div class="item value">
+        <input type="text" name="userid" class v-model="user_id" />
+      </div>
+      <div class="item length">
+        <p>{{ user_id.length }}</p>
+      </div>
     </div>
     <div class="input">
-        <div class="item label">
-          <p>Password</p>
-        </div>
-        <div class="item value">
-          <input type="password" name="password" class="" v-model="password" />
-        </div>
-        <div class="item length">
-          <p>{{ password.length }}</p>
-        </div>
+      <div class="item label">
+        <p>Password</p>
+      </div>
+      <div class="item value">
+        <input type="password" name="password" class v-model="password" />
+      </div>
+      <div class="item length">
+        <p>{{ password.length }}</p>
+      </div>
     </div>
     <div class="btn">
-        <button @click="login">Login</button>
+      <button @click="login">Login</button>
     </div>
   </div>
 </template>
@@ -37,14 +37,14 @@ export default defineComponent({
   data: function () {
     return {
       user_id: "",
-      password: ""
-    }
+      password: "",
+    };
   },
   methods: {
     login: function () {
       //alert(this.user_id);
-    }
-  }
+    },
+  },
 });
 </script>
 
@@ -55,6 +55,7 @@ export default defineComponent({
   width: 600px;
 
   .btn {
+    margin: 0 auto;
     button {
       border-color: rgb(216, 216, 216) rgb(209, 209, 209) rgb(186, 186, 186);
       border-style: solid;
@@ -73,7 +74,7 @@ export default defineComponent({
     }
     button:active {
       position: relative;
-      top: 1px
+      top: 1px;
     }
   }
 
@@ -96,7 +97,7 @@ export default defineComponent({
 
     .value {
       width: 100%;
-      
+
       input {
         line-height: 20px;
         width: 100%;
@@ -108,9 +109,9 @@ export default defineComponent({
       p {
         margin-top: 10px;
         width: 50px;
+        margin-left: 10px;
       }
     }
-  
   }
 }
 </style>

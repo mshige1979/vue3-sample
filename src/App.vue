@@ -1,7 +1,4 @@
-/** 
- * メインコンポーネント
- */
- // template
+// template
 <template>
   <div>
     <!-- navi area -->
@@ -13,7 +10,7 @@
     -->
     <!-- content area -->
     <div class="contents">
-        <router-view />
+      <router-view />
     </div>
   </div>
 </template>
@@ -23,11 +20,15 @@
 import { defineComponent } from "vue";
 
 export default defineComponent({
+  data() {
+    return {};
+  },
+  methods: {},
 });
 </script>
 
 // style
-<style lang="scss">
+<style lang="scss" scoped>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
