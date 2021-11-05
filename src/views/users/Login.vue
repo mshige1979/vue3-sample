@@ -8,13 +8,19 @@
         <div class="item value">
           <input type="text" name="userid" class="" v-model="user_id" />
         </div>
+        <div class="item length">
+          <p>{{ user_id.length }}</p>
+        </div>
     </div>
     <div class="input">
         <div class="item label">
           <p>Password</p>
         </div>
         <div class="item value">
-          <input type="password" name="password" class="" />
+          <input type="password" name="password" class="" v-model="password" />
+        </div>
+        <div class="item length">
+          <p>{{ password.length }}</p>
         </div>
     </div>
     <div class="btn">
@@ -95,6 +101,13 @@ export default defineComponent({
         line-height: 20px;
         width: 100%;
         padding: 5px;
+      }
+    }
+
+    .length {
+      p {
+        margin-top: 10px;
+        width: 50px;
       }
     }
   
