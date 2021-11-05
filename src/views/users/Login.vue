@@ -1,4 +1,4 @@
-/** Html */
+// template
 <template>
   <div class="">
     <div>
@@ -15,10 +15,10 @@
   </div>
 </template>
 
-/** Script */
+// script
 <script lang="ts">
 </script>
 
-/** Style */
+// css(scss)
 <style scoped lang="scss">
 </style>
