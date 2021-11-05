@@ -28,6 +28,10 @@ export default defineComponent({
 
 // style
 <style lang="scss">
+html, body, input, div, p {
+  margin: 0px;
+  padding: 0px;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
